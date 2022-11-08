@@ -105,4 +105,13 @@ select {
     font-size: 3rem;
     position: absolute;
     top: 0;
+    right: 10px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    color: var(--blue);
+}
+
+#container .close:hover {
+    color: rgb(36, 113, 177);
+    transition: 0.3s ease;
 }
