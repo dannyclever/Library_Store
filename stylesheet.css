@@ -27,3 +27,20 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    min-height: 8vh;
+    top: 0;
+    width: 100%;
+    background: var(--blue);
+}
+
+header h2 {
+    font-size: 1.6rem;
+    color: var(--white);
+    letter-spacing: 2px;
+}
