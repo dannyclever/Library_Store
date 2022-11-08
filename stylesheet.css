@@ -55,10 +55,24 @@ header h2 {
     cursor: pointer;
     color: var(--white);
     background: var(--blue);
-    transition: 0.5s;
+    transition: 0.5s ease;
     position: fixed;
     bottom: 5%;
     right: 5%;
 }
 
+#container {
+    transition: scale(0);
+    transition: 0.5s ease;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 380px;
+    z-index: 10000;
+    background: #fff;
+}
 
+#container h1 {
+    
+}
