@@ -115,3 +115,84 @@ select {
     color: rgb(36, 113, 177);
     transition: 0.3s ease;
 }
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.bookshelf {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    max-width: 1000;
+    position: absolute;
+    top: 12%;
+    left: 15%;
+    margin: 2rem;
+}
+
+.book {
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    margin: 2rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+    background: white;
+}
+
+.book:hover {
+    box-shadow: 3px 3px 3px 30px 10px rgba(0, 0, 0, 0.15);
+}
+
+.book h2 {
+    background: var(--blue);
+    color: var(--white);
+    padding: 0.5rem 0;
+    margin: -0.5rem 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.book h3 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+}
+
+.book .trash,
+.book .update {
+    outline: none;
+    border: none;
+    width: 100%;
+    display: inline-block;
+    padding: 10%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.book .update {
+    background: rgb(35, 255, 171);
+    color: var(--blue);
+    position: relative;
+    top: 40px;
+}
+
+.book .trash {
+    background: var(--blue);
+    color: var(--white);
+    position: relative;
+    top: 40px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
