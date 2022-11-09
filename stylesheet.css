@@ -196,3 +196,33 @@ select {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+@media screen and (max-width: 360px) {
+    #popup #container {
+        width: 260px;
+        padding-top: 10px;
+    }
+
+    #container h1 {
+        font-size: 32px;
+    }
+
+    #container .close {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #container {
+        width: 320pxpx;
+    }
+
+    #container h1 {
+        font-size: 36px;
+    }
+
+    #container .close {
+        font-size: 32px;
+    }
+}
+
