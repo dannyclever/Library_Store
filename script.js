@@ -61,8 +61,8 @@ function addBook(i) {
     pageNode.innerHTML = `Pages: ${pages}`;
 
 
-    const read = document.getElementById("button").value;
-    readNode = document.createElement("h3");
+    const read = document.getElementById("read").value;
+    let readNode = document.createElement("h3");
     readNode.innerHTML = `Read? ${read}${read === "Yes"? "😃" : "😢"}`;
 
     let updateNode = document.createElement("button");
