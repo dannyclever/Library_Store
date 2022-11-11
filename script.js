@@ -85,5 +85,20 @@ function addBook(i) {
     bookshelf.appendChild(bookNode);
     formOpenOrClosed();
     form.reset();
+
+    // update book status
+    updateNode.addEventListener("click", () => {
+        if (readNode.innerHTML === "Read? No😢") {
+            readNode.innerHTML = "Read? Yes😃";
+            book.read = "Yes";
+            localStorage.setItem("books", JSON.stringify(books));
+        } else {
+            readNode.innerHTML ="Read? No😢";
+            book.read = "No😢";
+            localStorage.setItem("books", JSON.stringify(books));
+        }
+    });
+    // delete
 }
+
 
