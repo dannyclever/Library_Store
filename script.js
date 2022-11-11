@@ -31,3 +31,12 @@ function formOpenOrClosed() {
         formOpen = true;
     }
 }
+
+//close modal
+function closeModal() {
+    formContainer.style.transform ="scale(0)";
+    overlay.style.opacity = 0;
+    newBook.style.transform ="rotate(0)";
+    form.reset();
+    formOpen = false;   
+}
