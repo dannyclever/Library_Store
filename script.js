@@ -109,7 +109,44 @@ function addBook(i) {
 
 function getBooks() {
     books.forEach(function (book, i) {
+        let bookNode = document.createElement("div");
+        bookNode.classList.add("book");
+        bookNode.setAttribute("data-index", `${i}`);
+
+        const title = document.getElementById("title").value;
+        let titleNode = document.createElement("h2");
+        titleNode.innerHTML = `Title: ${book.title}`;
+
+        const author = document.getElementById("author").value;
+        let authorNode = document.createElement("h3");
+        authorNode.innerHTML = `Author: ${book.author}`;
         
+        const pages = document.getElementById("pages").value;
+        let pageNode = document.createElement("h3");
+        pageNode.innerHTML = `Pages: ${book.pages}`;
+
+        const read = document.getElementById("read").value;
+        let readNode = document.createElement("h3");
+        readNode.innerHTML = `Read? ${book.read}${book.read === "Yes" ? "😃" : "😢"}`;
+
+
+        let updateNode = document.createElement("button");
+        updateNode.classList ="update";
+        updateNode.innerHTML = `Update <i class="fas fa-pen"></i>`;
+
+
+    let trashNode = document.createElement("button");
+    trashNode.classList = "trash";
+    trashNode.innerHTML = `Delete <i class="fas fa-trah-alt">`;
+
+
+    bookNode.appendChild(titleNode);
+    bookNode.appendChild(authorNode);
+    bookNode.appendChild(pageNode);
+    bookNode.appendChild(readNode);
+    bookNode.appendChild(updateNode);
+    bookNode.appendChild(trashNode);
+    bookshelf.appendChild(bookNode);
     })
 }
 
