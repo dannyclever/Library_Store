@@ -16,3 +16,18 @@ class Book {
         this.read = read;
     }
 }
+
+function formOpenOrClosed() {
+    if (formOpen) {
+        formContainer.style.transform ="scale(0)";
+        newBook.style.transform = "rotate(0)";
+        form.reset();
+        overlay.style.opacity = 0;
+        formOpen = false;
+    } else {
+        formContainer.style.transform ="scale(1)";
+        newBook.style.transform = "rotate(45deg)";
+        overlay.style.opacity = 1;
+        formOpen = true;
+    }
+}
