@@ -32,7 +32,7 @@ function formOpenOrClosed() {
     }
 }
 
-//close modal
+// close modal
 function closeModal() {
     formContainer.style.transform ="scale(0)";
     overlay.style.opacity = 0;
@@ -98,7 +98,19 @@ function addBook(i) {
             localStorage.setItem("books", JSON.stringify(books));
         }
     });
-    // delete
+    // delete book
+    trashNode.addEventListener("click", () => {
+        bookshelf.removeChild(bookNode);
+        books.splice(bookNode, 1);
+        localStorage.setItem("books", JSON.stringify("books"));
+    });
+}
+
+
+function getBooks() {
+    books.forEach(function (book, i) {
+        
+    })
 }
 
 
