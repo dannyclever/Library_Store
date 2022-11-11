@@ -147,7 +147,34 @@ function getBooks() {
     bookNode.appendChild(updateNode);
     bookNode.appendChild(trashNode);
     bookshelf.appendChild(bookNode);
-    })
+
+    // update book status 
+    updateNode.addEventListener("click", () => {
+        if (readNode.innerHTML === "Read? No😢") {
+            readNode.innerHTML = "Read? Yes😃";
+            book.read = "Yes";
+            localStorage.setItem("books", JSON.stringify(books));
+        } else {
+            readNode.innerHTML = "Read? No😢";
+            book.read = "No";
+            localStorage.setItem("books", JSON.stringify(books));
+        }
+    });
+    // delete book
+    trashNode.addEventListener("click", () => {
+        bookshelf.removeChild(bookNode);
+        books.splice(bookNode, 1);
+        localStorage.setItem("books", JSON.stringify(books));
+    });
+    });
 }
+
+window.addEventListener("load", getBooks);
+newBook.addEventListener("click", formOpenOrClosed);
+closeButton.addEventListener("click", closeModal);
+form.addEventListener("submit", (e, i) => {
+    e.preventDefault();
+    addBook(i);
+});
 
 
