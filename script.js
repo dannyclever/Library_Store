@@ -94,7 +94,7 @@ function addBook(i) {
             localStorage.setItem("books", JSON.stringify(books));
         } else {
             readNode.innerHTML ="Read? No😢";
-            book.read = "No😢";
+            book.read = "No";
             localStorage.setItem("books", JSON.stringify(books));
         }
     });
