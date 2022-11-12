@@ -34,7 +34,7 @@ To get a local copy up and running follow these simple example steps.
 3. Enjoy the beauty of the project
 
 
-## Authors
+## Author
 
 👤 **Author**
 
