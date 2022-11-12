@@ -12,10 +12,9 @@ The books are stored in browser's localStorage
 
 ## Screenshots
 
-### Big Screen with pop up form
 <img src="img/form.png" alt="Screen form to add the books" >
 
-### Big Screen
+
 <img src="img/books-storage.png" alt="The books storage" >
 
 
@@ -25,16 +24,12 @@ The books are stored in browser's localStorage
 - CSS
 - Javascript
 
-## Live Demo
-
-[Live Demo Link](https://raw.githack.com/addod19/BookStoreLibrary/library/index.html)
-
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-1. ``` git clone https://github.com/addod19/BookStoreLibrary.git ```
+1. ``` git clone https://github.com/dannyclever/Library_Store.git ```
 2. Open the project with your favorite browser
 3. Enjoy the beauty of the project
 
@@ -43,11 +38,13 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author**
 
-- Github: [@addod19](https://github.com/addod19)
-- Twitter: [@DanielLarbiAdd1](https://twitter.com/DanielLarbiAdd1)
-- Linkedin: [Daniel Larbi Addo](https://linkedin.com/in/daniel-larbi-addo-9738b0128/)
-- Email: (addodaniellarbi@gmail.com)
+- Github: [dannyclever](https://github.com/dannyclever)
+- Email: (danielnzinga5@gmail.com)
 
+
+## The Website
+
+Follow the link to acess to the Website live: https://dannyclever.github.io/Library_Store/
 
 
 1. Fork it (https://github.com/dannyclever/Library_Store)
